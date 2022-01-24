@@ -16,6 +16,7 @@ export default NextAuth({
       },
     }),
   ],
+  secret: "secret-string-for-production",
 
   callbacks: {
     async session({ session }) {
